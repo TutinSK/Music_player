@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Music player</title>
+		<!-- <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' /> -->
+		
+		<link rel="icon" href="./assets/img/still-dre.jpg"/> 
+
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+		<!-- google font -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+		<!-- css -->
+		<link rel="stylesheet" href="./assets/css/index.css">
+	</head>
+	<body>
+		<div class="player">
+			<div class="dashboard">
+				<header>
+					<span>Now playing:</span>
+					<div class="heading-wrap">
+						<h2>
+							<span class="song-title-sub">
+								Still D R E
+							</span>
+
+							<span class="song-title-sub">
+								Still D R E
+							</span>
+						</h2>
+						
+					</div>
+				</header>
+
+				<div class="cd">
+					<div class="cd-thumb" style="background-image: url('./assets/img/still-dre.jpg')"></div>
+				</div>
+
+				<div class="control">
+					<div class="btn btn-repeat">
+						<i class="fas fa-redo"></i>
+					</div>
+					<div class="btn btn-prev">
+						<i class="fas fa-step-backward"></i>
+					</div>
+					<div class="btn btn-toggle-play">
+						<i class="fas fa-pause icon-pause"></i>
+						<i class="fas fa-play icon-play"></i>
+					</div>
+					<div class="btn btn-next">
+						<i class="fas fa-step-forward"></i>
+					</div>
+					<div class="btn btn-random">
+						<i class="fas fa-random"></i>
+					</div>
+				</div>
+
+				<div class="progress-wrap">
+					<span class="currentTime">00:00</span>
+					<input id="progress" class="progress" max="100" min="0" step="1" type="range" value="0" />
+					<span class="duration">00:00</span>
+				</div>
+
+				<div class="progress-wrap sound-section">
+					<span class="sound-icon">
+						<i class="fas fa-volume-mute"></i>
+					</span>
+					<input id="sound" class="progress" max="100" min="0" step="1" type="range" value="0" />
+					<span class="sound-icon">
+						<i class="fas fa-volume-up"></i>
+					</span>
+				</div>
+
+				<audio id="audio" src="./assets/source/still-dre.mp3"></audio>
+			</div>
+
+			<div class="playlist">
+				<div data-index="1" class="song active">
+		            <div
+		                class="thumb"
+		                style="background-image: url('./assets/img/tron-tim.jpg');"
+		            ></div>
+		            <div class="body">
+		                <h3 class="title">Still D R E</h3>
+		                <p class="author">Snoop Dogg</p>
+		            </div>
+		            <div class="option">
+		                <i class="fas fa-ellipsis-h"></i>
+		            </div>
+		        </div>
+			</div>
+		</div>	
+		<script src="./assets/js/index.js"></script>
+	</body>
+</html>
